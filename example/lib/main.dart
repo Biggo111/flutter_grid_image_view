@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           _buildExampleCard(
-            'Multiple Images (Social Media Style)',
+            'Multiple Images',
             FlutterGridImageView(
               images: sampleImages,
               config: const GridImageConfig(
@@ -82,25 +82,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
           ),
-          _buildExampleCard(
-            'Custom Style',
-            FlutterGridImageView(
-              images: sampleImages,
-              config: GridImageConfig(
-                height: 250,
-                margin: const EdgeInsets.symmetric(horizontal: 16),
-                borderRadius: 8,
-                spacing: 2,
-                overlayColor: Colors.blue.withOpacity(0.7),
-                countTextStyle: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 20),
         ],
       ),
     );
