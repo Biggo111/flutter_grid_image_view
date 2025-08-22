@@ -1,7 +1,7 @@
 name: flutter_grid_image_view
 description: "A Flutter package for displaying images in a grid layout with remaining count, perfect for social media style posts."
-version: 0.0.1
-homepage:
+version: 0.0.2
+repository: https://github.com/yourusername/flutter_grid_image_view
 
 environment:
   sdk: ^3.8.0
