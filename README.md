@@ -9,10 +9,8 @@ A Flutter package for displaying images in a grid layout with remaining count ov
 ### Single, Two, and Social Media Style Layout
 
 <p float="left">
-  <img src="https://raw.githubusercontent.com/<Biggo111>/<flutter_grid_image_view
->/main/docs/grid_preview_1.png" width="45%" />
-  <img src="https://raw.githubusercontent.com/<Biggo111>/<flutter_grid_image_view
->/main/docs/grid_preview_2.png" width="45%" />
+  <img src="https://raw.githubusercontent.com/Biggo111/flutter_grid_image_view/main/docs/grid_preview_1.png" width="45%" />
+  <img src="https://raw.githubusercontent.com/Biggo111/flutter_grid_image_view/main/docs/grid_preview_2.png" width="45%" />
 </p>
 
 ## Features
