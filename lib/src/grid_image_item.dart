@@ -1,22 +1,17 @@
 /// Image source types supported by the widget
-enum ImageSourceType {
-  network,
-  asset,
-  file,
-  memory,
-}
+enum ImageSourceType { network, asset, file, memory }
 
 /// Image data class that holds image information
 class GridImageItem {
   /// Path or URL to the image
   final String path;
-  
+
   /// Type of image source
   final ImageSourceType sourceType;
-  
+
   /// Optional metadata for the image
   final Map<String, dynamic>? metadata;
-  
+
   /// Optional custom headers for network images
   final Map<String, String>? headers;
 

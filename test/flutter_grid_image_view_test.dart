@@ -6,9 +6,7 @@ void main() {
   group('FlutterGridImageView Tests', () {
     testWidgets('renders empty widget when no images provided', (tester) async {
       await tester.pumpWidget(
-        const MaterialApp(
-          home: FlutterGridImageView(images: []),
-        ),
+        const MaterialApp(home: FlutterGridImageView(images: [])),
       );
 
       expect(find.byType(FlutterGridImageView), findsOneWidget);
@@ -19,9 +17,7 @@ void main() {
       await tester.pumpWidget(
         MaterialApp(
           home: FlutterGridImageView(
-            images: [
-              GridImageItem.network('https://example.com/image.jpg'),
-            ],
+            images: [GridImageItem.network('https://example.com/image.jpg')],
           ),
         ),
       );
@@ -33,19 +29,16 @@ void main() {
     test('GridImageItem network factory creates correct instance', () {
       const url = 'https://example.com/image.jpg';
       final item = GridImageItem.network(url);
-      
+
       expect(item.path, equals(url));
       expect(item.sourceType, equals(ImageSourceType.network));
     });
 
     test('GridImageConfig copyWith works correctly', () {
-      const config = GridImageConfig(
-        height: 200,
-        borderRadius: 8,
-      );
-      
+      const config = GridImageConfig(height: 200, borderRadius: 8);
+
       final newConfig = config.copyWith(height: 300);
-      
+
       expect(newConfig.height, equals(300));
       expect(newConfig.borderRadius, equals(8));
     });

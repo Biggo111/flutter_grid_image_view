@@ -5,19 +5,19 @@ import 'grid_image_item.dart';
 class ImageGalleryViewer extends StatefulWidget {
   /// List of images to display
   final List<GridImageItem> images;
-  
+
   /// Initial index to start from
   final int initialIndex;
-  
+
   /// Background color of the gallery
   final Color? backgroundColor;
-  
+
   /// Whether to show the app bar
   final bool showAppBar;
-  
+
   /// Custom app bar widget
   final PreferredSizeWidget? customAppBar;
-  
+
   /// Custom page indicator widget
   final Widget Function(int currentIndex, int totalImages)? pageIndicator;
 

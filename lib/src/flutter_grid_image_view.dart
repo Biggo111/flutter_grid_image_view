@@ -10,13 +10,13 @@ typedef OnImageTap = void Function(int index, List<GridImageItem> images);
 class FlutterGridImageView extends StatelessWidget {
   /// List of images to display
   final List<GridImageItem> images;
-  
+
   /// Configuration for customizing the appearance
   final GridImageConfig config;
-  
+
   /// Callback when an image or the grid is tapped
   final OnImageTap? onImageTap;
-  
+
   /// Whether to show a default full-screen gallery when tapped
   final bool showDefaultGallery;
 
@@ -192,7 +192,8 @@ class FlutterGridImageView extends StatelessWidget {
                 child: Center(
                   child: Text(
                     '+${images.length - 3}',
-                    style: config.countTextStyle ??
+                    style:
+                        config.countTextStyle ??
                         const TextStyle(
                           color: Colors.white,
                           fontSize: 24,
@@ -224,10 +225,8 @@ class FlutterGridImageView extends StatelessWidget {
         } else if (showDefaultGallery) {
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) => ImageGalleryViewer(
-                images: images,
-                initialIndex: index,
-              ),
+              builder: (context) =>
+                  ImageGalleryViewer(images: images, initialIndex: index),
             ),
           );
         }
@@ -248,19 +247,14 @@ class FlutterGridImageView extends StatelessWidget {
             return config.placeholder ??
                 Container(
                   color: Colors.grey[300],
-                  child: const Center(
-                    child: CircularProgressIndicator(),
-                  ),
+                  child: const Center(child: CircularProgressIndicator()),
                 );
           },
           errorBuilder: (context, error, stackTrace) {
             return config.errorWidget ??
                 Container(
                   color: Colors.grey[300],
-                  child: const Icon(
-                    Icons.error,
-                    color: Colors.grey,
-                  ),
+                  child: const Icon(Icons.error, color: Colors.grey),
                 );
           },
         );
@@ -272,10 +266,7 @@ class FlutterGridImageView extends StatelessWidget {
             return config.errorWidget ??
                 Container(
                   color: Colors.grey[300],
-                  child: const Icon(
-                    Icons.error,
-                    color: Colors.grey,
-                  ),
+                  child: const Icon(Icons.error, color: Colors.grey),
                 );
           },
         );

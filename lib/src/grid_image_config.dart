@@ -4,31 +4,31 @@ import 'package:flutter/material.dart';
 class GridImageConfig {
   /// Height of the image grid container
   final double height;
-  
+
   /// Margin around the container
   final EdgeInsetsGeometry? margin;
-  
+
   /// Padding inside the container
   final EdgeInsetsGeometry? padding;
-  
+
   /// Border radius for individual images
   final double borderRadius;
-  
+
   /// Spacing between images
   final double spacing;
-  
+
   /// Background color for the remaining count overlay
   final Color overlayColor;
-  
+
   /// Text style for the remaining count
   final TextStyle? countTextStyle;
-  
+
   /// Custom placeholder widget when image fails to load
   final Widget? placeholder;
-  
+
   /// Custom error widget when image fails to load
   final Widget? errorWidget;
-  
+
   /// Enable/disable image tap functionality
   final bool enableImageTap;
 
