@@ -2,6 +2,8 @@
 
 A Flutter package for displaying images in a grid layout with remaining count overlay, perfect for social media style posts.
 
+👉 **[View on pub.dev](https://pub.dev/packages/flutter_grid_image_view)**
+
 ## 📸 Preview
 
 ### Single, Two, and Social Media Style Layout
