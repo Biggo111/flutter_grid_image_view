@@ -6,10 +6,8 @@ A Flutter package for displaying images in a grid layout with remaining count ov
 
 ### Single, Two, and Social Media Style Layout
 
-<p float="left">
-  <img src="docs/demo_1.png" width="45%" />
-  <img src="docs/demo_2.png" width="45%" />
-</p>
+![Single and Two Images](docs/demo_1.png)
+![Multiple Images Social Style](docs/demo_2.png)
 
 ## Features
 
